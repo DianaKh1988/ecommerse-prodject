@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+    Product
+{% endblock %}
+
+{% block content %}
+    <div class="container py-5">
+        <div class="row mt-5">
+            <div class="col-10 mx-xl-0 col-md-6 my-3">
+                <img src="{% static "images/teddy.png" %}">
+            </div>
+        </div>
+    </div>
+    <div class="col-10 mx-auto col-md-6 my-3">
+        <div>
+            <h1 class="product_title">Bear cavalry</h1>
+                <h5 class="text-info font-italic mb-3">
+                    0.99$
+                </h5>
+            <p class="product_desk">Product Description</p>
+            <p class="text-justify product_text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis ipsum in lacus blandit aliquet. Donec
+                a dui maximus, interdum nunc ac, laoreet enim. Duis ultricies felis vel fermentum viverra. Aliquam
+                ullamcorper, urna quis egestas volutpat, sapien risus porttitor lorem, a dapibus elit risus sed dolor.
+                Proin feugiat dapibus erat id feugiat. Donec in aliquet purus, a aliquet nibh. Morbi at orci auctor,
+                lacinia odio ac, efficitur sem. Phasellus auctor in enim consectetur tristique. Donec vel nisi ac nisi
+                ien sapien, eleifend vitae lorem nec, volutpat fringilla massa. Donec gravida non est eget imperdiet.
+                felis, ac maximus ipsum dapibus consequat. Nullam eu leo blandit, varius metus at, maximus dui. Sed nec
+                facilisis felis. Sed at sapien dapibus, tincidunt metus nec, interdum diam. Vivamus lobortis ante
+                ligula, at suscipit nisl cursus non. Nam sapien erat, aliquam ornare euismod eu, volutpat id magna.
+            </p>
+            <p class="text-justify product_text">Out of Stock</p>
+        </div>
+    </div>
+{% endblock %}
